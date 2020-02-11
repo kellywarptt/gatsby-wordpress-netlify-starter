@@ -3,7 +3,7 @@ module.exports = {
     title: `TerraTrue`,
     description: `TerraTrue is the easiest way for teams to conquer privacy, collaborate on launches, and ship software at the speed of innovation. Request an invitation to our Early Access program.`,
     author: `TerraTrue`,
-    siteUrl: `https://dreamy-kare-9dd443.netlify.com`
+    siteUrl: `https://terratruehq.com/`
   },
   plugins: [
 
