@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="498px" height="166px" viewBox="0 0 498 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-143.000000, -1372.000000)" id="Group-3">
+            <g transform="translate(144.000000, 1369.000000)">
+                <path d="M3,30 L121,30 L121,30 L121,64 L3,64 C1.34314575,64 2.02906125e-16,62.6568542 0,61 L0,33 C-2.02906125e-16,31.3431458 1.34314575,30 3,30 Z" id="Rectangle" stroke="#22B989" fill="#FFFFFF"></path>
+                <rect id="Rectangle-Copy-6" stroke="#FFCF5B" fill="#FFCF5B" x="125" y="30" width="121" height="34"></rect>
+                <rect id="Rectangle-Copy-7" stroke="#FFA26B" fill="#FFFFFF" x="250" y="30" width="121" height="34"></rect>
+                <path d="M375,30 L493,30 C494.656854,30 496,31.3431458 496,33 L496,61 C496,62.6568542 494.656854,64 493,64 L375,64 L375,64 L375,30 Z" id="Rectangle-Copy-9" stroke="#EF6D6D" fill="#FFFFFF"></path>
+                <text id="Limited" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="18" letter-spacing="1" fill="#FFFFFF">
+                    <tspan x="160.274" y="49">LIMITED</tspan>
+                </text>
+                <text id="significant" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="15" letter-spacing="1" fill="#FFA26B">
+                    <tspan x="272.476" y="51">SIGNIFICANT</tspan>
+                </text>
+                <text id="Severe" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="15" letter-spacing="1" fill="#EF6D6D">
+                    <tspan x="413.2" y="51">SEVERE</tspan>
+                </text>
+                <text id="Trivial" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="15" letter-spacing="1" fill="#22B989">
+                    <tspan x="36.234" y="51">TRIVIAL</tspan>
+                </text>
+                <text id="Severity" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="14" letter-spacing="1" fill="#9AA4B9">
+                    <tspan x="0" y="11">SEVERITY</tspan>
+                </text>
+                <path d="M3,134 L121,134 L121,134 L121,168 L3,168 C1.34314575,168 2.02906125e-16,166.656854 0,165 L0,137 C-2.02906125e-16,135.343146 1.34314575,134 3,134 Z" id="Rectangle-Copy-10" stroke="#22B989" fill="#FFFFFF"></path>
+                <rect id="Rectangle-Copy-11" stroke="#FFCF5B" fill="#FFFFFF" x="125" y="134" width="121" height="34"></rect>
+                <rect id="Rectangle-Copy-12" stroke="#FFA26B" fill="#FFFFFF" x="250" y="134" width="121" height="34"></rect>
+                <path d="M375,134 L493,134 C494.656854,134 496,135.343146 496,137 L496,165 C496,166.656854 494.656854,168 493,168 L375,168 L375,168 L375,134 Z" id="Rectangle-Copy-13" stroke="#EF6D6D" fill="#EF6D6D"></path>
+                <text id="Remote" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="15" letter-spacing="1" fill="#22B989">
+                    <tspan x="36.13" y="154">REMOTE</tspan>
+                </text>
+                <text id="Unlikely" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="15" letter-spacing="1" fill="#FFCF5B">
+                    <tspan x="156.282" y="154">UNLIKELY</tspan>
+                </text>
+                <text id="Likely" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="15" letter-spacing="1" fill="#FFA26B">
+                    <tspan x="290.486" y="154">LIKELY</tspan>
+                </text>
+                <text id="Likelihood" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="14" letter-spacing="1" fill="#9AA4B9">
+                    <tspan x="0" y="115">LIKELIHOOD</tspan>
+                </text>
+                <text id="Probable" font-family="PTSans-Bold, PT Sans" font-size="12" font-weight="bold" line-spacing="18" letter-spacing="1" fill="#FFFFFF">
+                    <tspan x="404.196" y="153">PROBABLE</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

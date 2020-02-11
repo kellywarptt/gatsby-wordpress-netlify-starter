@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="455px" height="36px" viewBox="0 0 455 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="127.274298" height="28" rx="3"></rect>
+        <filter x="-5.5%" y="-17.9%" width="111.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="143.308855" y="0" width="149.221598" height="28" rx="3"></rect>
+        <filter x="-4.7%" y="-17.9%" width="109.4%" height="150.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="308.665227" y="0" width="138.334773" height="28" rx="3"></rect>
+        <filter x="-5.1%" y="-17.9%" width="110.1%" height="150.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-140.000000, -1607.000000)" id="Group-13">
+            <g transform="translate(144.000000, 1609.000000)">
+                <g id="Rectangle-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="Anonymization" font-family="PTSans-Regular, PT Sans" font-size="14" font-weight="normal" fill="#031D52">
+                    <tspan x="29.062635" y="18">Anonymization</tspan>
+                </text>
+                <g id="UI/Checkbox/Normal" transform="translate(5.010799, 6.000000)">
+                    <rect id="bounds" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M12.6666667,3.33333333 L12.6666667,12.6666667 L3.33333333,12.6666667 L3.33333333,3.33333333 L12.6666667,3.33333333 L12.6666667,3.33333333 Z M12.6666667,2 L3.33333333,2 C2.6,2 2,2.6 2,3.33333333 L2,12.6666667 C2,13.4 2.6,14 3.33333333,14 L12.6666667,14 C13.4,14 14,13.4 14,12.6666667 L14,3.33333333 C14,2.6 13.4,2 12.6666667,2 L12.6666667,2 L12.6666667,2 Z" id="Shape" fill="#EBF0F7" fill-rule="evenodd"></path>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="3.33333333" y="3.33333333" width="9.33333333" height="9.33333333"></rect>
+                </g>
+                <g id="Rectangle-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <g id="Rectangle-Copy-10">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <text id="Data-minimization" font-family="PTSans-Regular, PT Sans" font-size="14" font-weight="normal" fill="#031D52">
+                    <tspan x="172.37149" y="18">Data minimization</tspan>
+                </text>
+                <text id="De-identification" font-family="PTSans-Regular, PT Sans" font-size="14" font-weight="normal" fill="#031D52">
+                    <tspan x="337.727862" y="18">De-identification</tspan>
+                </text>
+                <g id="UI/Checkbox/Normal" transform="translate(148.319654, 6.000000)">
+                    <rect id="bounds" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M12.6666667,3.33333333 L12.6666667,12.6666667 L3.33333333,12.6666667 L3.33333333,3.33333333 L12.6666667,3.33333333 L12.6666667,3.33333333 Z M12.6666667,2 L3.33333333,2 C2.6,2 2,2.6 2,3.33333333 L2,12.6666667 C2,13.4 2.6,14 3.33333333,14 L12.6666667,14 C13.4,14 14,13.4 14,12.6666667 L14,3.33333333 C14,2.6 13.4,2 12.6666667,2 L12.6666667,2 L12.6666667,2 Z" id="Shape" fill="#EBF0F7" fill-rule="evenodd"></path>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="3.33333333" y="3.33333333" width="9.33333333" height="9.33333333"></rect>
+                </g>
+                <g id="UI/Checkbox/Normal" transform="translate(313.676026, 6.000000)">
+                    <rect id="bounds" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M12.6666667,3.33333333 L12.6666667,12.6666667 L3.33333333,12.6666667 L3.33333333,3.33333333 L12.6666667,3.33333333 L12.6666667,3.33333333 Z M12.6666667,2 L3.33333333,2 C2.6,2 2,2.6 2,3.33333333 L2,12.6666667 C2,13.4 2.6,14 3.33333333,14 L12.6666667,14 C13.4,14 14,13.4 14,12.6666667 L14,3.33333333 C14,2.6 13.4,2 12.6666667,2 L12.6666667,2 L12.6666667,2 Z" id="Shape" fill="#EBF0F7" fill-rule="evenodd"></path>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="3.33333333" y="3.33333333" width="9.33333333" height="9.33333333"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
