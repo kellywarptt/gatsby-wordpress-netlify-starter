@@ -6,10 +6,9 @@ import { graphql } from "gatsby";
 
 export default class CategoryTemplate extends Component {
     render() {
-        const { page, posts, categories, category, config } = this.props.data;
         return (
             <Layout>
-                <SEO title="Careers" />
+                category
             </Layout>
         );
     }

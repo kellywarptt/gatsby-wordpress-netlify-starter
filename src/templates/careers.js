@@ -13,10 +13,15 @@ class Careers extends Component {
   render() {
 
     const pageData = this.props.data.wordpressPage
+    const seoData = this.props.data.wordpressPage.yoast_meta
 
     return (
       <Layout pageId={pageData.wordpress_id}>
-      <SEO title="Careers" />
+        <SEO
+          title={seoData.yoast_wpseo_title}
+          description={seoData.yoast_wpseo_metadesc}
+          thumbnail={pageData.featured_media.link}
+        />
         <div className="careers transition-item animated fadeIn delay-200">
           <div className="banner">
             <div className="container">
@@ -134,10 +139,12 @@ export const careersQuery = graphql`
   query careersPageQuery($id: String!) {
     wordpressPage(id: { eq: $id }) {
       wordpress_id
-      yoast_wpseo {
-        title
-        metadesc
-        metakeywords
+      yoast_meta {
+        yoast_wpseo_title
+        yoast_wpseo_metadesc
+      }
+      featured_media {
+        link
       }
       acf {
         careers {

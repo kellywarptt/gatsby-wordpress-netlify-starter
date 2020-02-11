@@ -6,10 +6,15 @@ import { graphql } from "gatsby"
 class RequestInvite extends Component {
   render() {
     const pageData = this.props.data.wordpressPage
+    const seoData = this.props.data.wordpressPage.yoast_meta
 
     return (
       <Layout pageId={pageData.wordpress_id}>
-      <SEO title="Request Invite" />
+        <SEO
+          title={seoData.yoast_wpseo_title}
+          description={seoData.yoast_wpseo_metadesc}
+          thumbnail={pageData.featured_media.link}
+        />
         <div className="invite">
           <div className="form">
             <div className="container">
@@ -38,10 +43,12 @@ export const inviteQuery = graphql`
   query invitePageQuery($id: String!) {
     wordpressPage(id: { eq: $id }) {
       wordpress_id
-      yoast_wpseo {
-        title
-        metadesc
-        metakeywords
+      yoast_meta {
+        yoast_wpseo_title
+        yoast_wpseo_metadesc
+      }
+      featured_media {
+        link
       }
       acf {
         request_invite {
