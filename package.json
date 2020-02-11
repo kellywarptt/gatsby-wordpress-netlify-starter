@@ -2,7 +2,7 @@
   "name": "gatsby-wordpress-netlify-starter",
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "2.0.0",
-  "author": "Justin W Hall",
+  "author": "Kelly Warpechowski",
   "keywords": [
     "gatsby"
   ],
@@ -10,7 +10,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git@github.com:justinwhall/gatsby-wordpress-netlify-starter.git"
+    "url": "git@github.com:kellywarptt/gatsby-wordpress-netlify-starter.git"
   },
   "scripts": {
     "develop": "gatsby develop",
