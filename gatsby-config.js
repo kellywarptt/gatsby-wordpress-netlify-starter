@@ -1,41 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `WordPress Gatsby Starter`,
-    author: `Justin W Hall`,
-    description: `A Gatsby WordPress Starter with special love for Netlify`,
-    siteUrl: `https://gatsby-wordpress-netlify-production.netlify.com`,
-    social: {
-      twitter: `justinwhall`,
-    },
-    postPrefix : '/blog',
-    pagePrefix: '',
+    title: `TerraTrue`,
+    description: `TerraTrue is the easiest way for teams to conquer privacy, collaborate on launches, and ship software at the speed of innovation. Request an invitation to our Early Access program.`,
+    author: `TerraTrue`,
+    siteUrl: `https://dreamy-kare-9dd443.netlify.com`
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
+
     {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
-        baseUrl: 'gatsbynetliflydemo.justinwhall.com',
+        baseUrl: 'terratrue.wpengine.com',
         // baseUrl: 'data.justinwhall.com',
         // baseUrl: 'wpgatsby.wtf',
         // WP.com sites set to true, WP.org set to false
         hostingWPCOM: false,
         // The protocol. This can be http or https.
-        protocol: 'https',
+        protocol: 'http',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: false,
         auth: {},
@@ -60,11 +42,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
   ],

@@ -1,52 +1,41 @@
-import React from "react"
-import { graphql } from "gatsby"
-
-import Bio from "../components/bio"
-import Layout from "../components/layout"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
-const PageTemplate = (props) => {
+class Page extends React.Component {
+  render() {
+    const pageData = this.props.data.wordpressPage
 
-  const post = props.data.wordpressPage;
-  const siteTitle = props.data.site.siteMetadata.title;
-
-  return (
-    <Layout location={props.location} title={siteTitle}>
-      <SEO
-        title={post.title}
-        description={post.excerpt}
-      />
-        <h1>{post.title} </h1>
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-        <hr
-        style={{
-          marginBottom: rhythm(1),
-        }}
-        />
-      <Bio />
-    </Layout>
-  )
+    return (
+      <Layout pageId={pageData.wordpress_id}>
+        <SEO title={pageData.title} description={pageData.excerpt} />
+        <div className="container">
+          <h1 className="entry-title">{pageData.title}</h1>
+          <div
+            className="entry-content"
+            dangerouslySetInnerHTML={{ __html: pageData.content }}
+          />
+        </div>
+      </Layout>
+    )
+  }
 }
 
-export default PageTemplate
+export default Page
 
 export const pageQuery = graphql`
-  query PageByID($id: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
+    query currentPageQuery($id: String!) {
+        wordpressPage(id: { eq: $id }) {
+            title
+            content
+            excerpt
+            wordpress_id
+            yoast_wpseo {
+              title
+              metadesc
+              metakeywords
+            }
+        }
     }
-    wordpressPage(id: { eq: $id }) {
-      slug
-      title
-      id
-      # featured_media {
-      #   source_url
-      # }
-      content
-    }
-  }
 `

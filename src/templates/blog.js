@@ -4,12 +4,12 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { graphql } from "gatsby";
 
-export default class CategoryTemplate extends Component {
+export default class BlogTemplate extends Component {
     render() {
-        const { page, posts, categories, category, config } = this.props.data;
+        const { page, posts, categories, config } = this.props.data;
         return (
-            <Layout>
-                <SEO title="Careers" />
+            <Layout config={config} hero={{ image: page.hero, title: page.title }}>
+                test
             </Layout>
         );
     }

@@ -1,83 +1,98 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { graphql, Link } from 'gatsby'
+import Layout from '../components/layout'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
-
-const PostTemplate = (props) => {
-
-  const post = props.data.wordpressPost;
-  const siteTitle = props.data.site.siteMetadata.title;
-  let featuredImage = false;
-
-  if (post.featured_media && post.featured_media.source_url ) {
-    featuredImage = post.featured_media.source_url;
-  }
-
+export const BlogPostTemplate = ({
+  content,
+  categories,
+  title,
+  date,
+}) => {
   return (
-    <Layout location={props.location} title={siteTitle}>
-      <SEO
-        title={post.title}
-        description={post.excerpt}
-      />
-        <h1>{post.title} </h1>
-        {featuredImage &&
-              <img src={featuredImage} alt={post.title} className="featured-image" />
-        }
-        <div
-          className="post-meta"
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        >
-          <div className="post-date">{post.date}</div>
-          <Link
-            className="cat-link"
-            to={`/category/${post.categories[0].slug}`}
-          >
-            {post.categories[0].name}{' '}
-          </Link>
+    <section className="section">
+      <div className="container content">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+              {title}
+            </h1>
+            <div dangerouslySetInnerHTML={{ __html: content }} />
+            <div style={{ marginTop: `4rem` }}>
+              <p>
+                {date} - posted by{' '}
+              </p>
+              {categories && categories.length ? (
+                <div>
+                  <h4>Categories</h4>
+                  <ul className="taglist">
+                    {categories.map(category => (
+                      <li key={`${category.slug}cat`}>
+                        <Link to={`/categories/${category.slug}/`}>
+                          {category.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </div>
+          </div>
         </div>
-
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-        <hr
-        style={{
-          marginBottom: rhythm(1),
-        }}
-        />
-      <Bio />
-    </Layout>
+      </div>
+    </section>
   )
-
 }
 
-export default PostTemplate
+BlogPostTemplate.propTypes = {
+  content: PropTypes.node.isRequired,
+  title: PropTypes.string,
+}
+
+const BlogPost = ({ data }) => {
+  const { wordpressPost: post } = data
+
+  return (
+    <Layout>
+      <Helmet title={`${post.title} | Blog`} />
+      <BlogPostTemplate
+        content={post.content}
+        categories={post.categories}
+        title={post.title}
+        date={post.date}
+      />
+    </Layout>
+  )
+}
+
+BlogPost.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+  }),
+}
+
+export default BlogPost
 
 export const pageQuery = graphql`
-  query PostById($id: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
+  fragment PostFields on wordpress__POST {
+    id
+    slug
+    content
+    date(formatString: "MMMM DD, YYYY")
+    title
+  }
+  query BlogPostByID($id: String!) {
     wordpressPost(id: { eq: $id }) {
-      date(formatString: "MMMM DD, YYYY")
-      slug
-      title
-      modified
-      excerpt
       id
-      featured_media {
-        source_url
-      }
+      title
+      slug
+      content
+      date(formatString: "MMMM DD, YYYY")
       categories {
         name
         slug
       }
-      content
     }
   }
 `
